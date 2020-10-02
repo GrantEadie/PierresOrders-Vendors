@@ -7,20 +7,20 @@ namespace BakerySupply.Controllers
   public class OrdersController : Controller
   {
 
-    [HttpGet("/vendors/{VendorId}/orders/new")]
+    [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
-    [HttpGet("/vendor/{categoryId}/orders/{itemId}")]
+    [HttpGet("/vendor/{categoryId}/orders/{orderId}")]
     public ActionResult Show(int orderId, int vendorId)
     {
       Order order = Order.Find(orderId);
       Vendor vendor = Vendor.Find(vendorId);
       Dictionary<string, object> model = new Dictionary<string, object>();
-      model.Add("Order", order);
-      model.Add("Vendor", vendor);
+      model.Add("order", order);
+      model.Add("vendor", vendor);
       return View(model);
     }
     
