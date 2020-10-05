@@ -21,8 +21,15 @@ _This application depends on the installation of .NET Core._
 
 ## SPECS
 
-* Inputted vendors will be placed in an object list. These are accessed by searching the array by ID.
-* Inputted orders will be placed in an object list within the objects of the vendors. These are accessed by IDs as well, and displayed by a dictionary key, value pair.
+| Spec | Input | Output |
+| :-------------     | :------------- | :------------- |
+|  1. Order Class, Instantiate an Order class | ... | Order Class |
+|  2. Vendor Class, Instantiate a Vendor class | ... | Vendor Class |
+|  2. Add Function, Test and Build | Test | Function |
+|  3. Delete Function, Test and Build | Test | Function |
+|  4. HTML Home/Index, Create Landing page | ... | Homepage |
+|  5. HTML Places/Index, Create class pages | ... | Class pages |
+|  6. ... | ... | ... |
 
 ## Known Bugs
 
