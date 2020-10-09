@@ -29,7 +29,6 @@ _This application depends on the installation of .NET Core._
 |  3. Delete Function, Test and Build | Test | Function |
 |  4. HTML Home/Index, Create Landing page | ... | Homepage |
 |  5. HTML Places/Index, Create class pages | ... | Class pages |
-|  6. ... | ... | ... |
 
 ## Known Bugs
 
