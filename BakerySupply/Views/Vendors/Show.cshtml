@@ -4,6 +4,7 @@
 }
 
 <h3>here are all the orders for this vendor:</h3>
+<hr>
 
 <ol>
 @foreach (Order order in @Model["orders"])
@@ -11,7 +12,8 @@
   <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Item</a></li>
 }
 </ol>
+<hr>
 
-<p><a href='/vendors/@Model["vendor"].Id/orders/new'>add a new order by this vendor</a></p>
-<p><a href='/vendors'>return to vendor list</a></p>
-<p><a href='/'>return to main page</a></p>
+<a class="btn btn-info" href='/vendors/@Model["vendor"].Id/orders/new'>add a new order by this vendor</a>
+<a class="btn btn-info" href='/vendors'>return to vendor list</a>
+<a class="btn btn-info" href='/'>return to main page</a>

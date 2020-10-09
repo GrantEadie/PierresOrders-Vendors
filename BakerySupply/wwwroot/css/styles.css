@@ -21,3 +21,10 @@ a:link {
   padding-right:8px;
   border:solid 1px;
 }
+
+#orderInfo {
+  padding:2px;
+  padding-left:8px;
+  padding-right:8px;
+  border:solid 1px;
+}

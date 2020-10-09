@@ -3,8 +3,12 @@
   Layout = "_Layout";
 }
 
-<h1 class="jumbotron">vendors</h1>
+<div class="jumbotron" style="background:transparent !important">
+<h1 >vendors</h1>
+<p>click your vendors to add items</p>
+</div>
 
+<div class="button-space">
 @if (@Model.Count == 0)
 {
   <h3>no vendors have been added yet.</h3>
@@ -20,3 +24,4 @@
 </form>
 <hr>
 <p class="btn btn-info"><a style="color:white;" href='/'>Back home</a></p>
+</div>
