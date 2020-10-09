@@ -13,7 +13,7 @@ namespace BakerySupply.Controllers
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
-    [HttpGet("/vendors/{categoryId}/orders/{orderId}")]
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
