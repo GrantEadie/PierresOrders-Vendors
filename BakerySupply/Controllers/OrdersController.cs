@@ -14,7 +14,7 @@ namespace BakerySupply.Controllers
       return View(vendor);
     }
     [HttpGet("/vendors/{categoryId}/orders/{orderId}")]
-    public ActionResult Show(int orderId, int vendorId)
+    public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
       Vendor vendor = Vendor.Find(vendorId);
