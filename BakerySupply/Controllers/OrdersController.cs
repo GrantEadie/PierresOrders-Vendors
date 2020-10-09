@@ -13,7 +13,7 @@ namespace BakerySupply.Controllers
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
-    [HttpGet("/vendor/{categoryId}/orders/{orderId}")]
+    [HttpGet("/vendors/{categoryId}/orders/{orderId}")]
     public ActionResult Show(int orderId, int vendorId)
     {
       Order order = Order.Find(orderId);
@@ -24,7 +24,7 @@ namespace BakerySupply.Controllers
       return View(model);
     }
     
-    [HttpPost("/Orders/delete")]
+    [HttpPost("/orders/delete")]
     public ActionResult DeleteAll()
     {
       Order.ClearAll();
